@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualisation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   
+    <section>
+        <img src="Media/bg.jpg" id="bg">
+        <img src="Media/moon.png" id="moon">
+        <img src="Media/mountain.png" id="mountain">
+        <img src="Media/road.png" id="road">
+        <h2 id="text">Data Visualisation</h2>
+
+    </section>
+     <header>
+       
+        <nav class="nav-right">
+           <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#rocket">About</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#designs">Design</a>
+            <a href="#visuals">Visuals</a>
+            
+
+           </div>
+           
+           
+            
+    
+    
+        </nav>
+
+        
+    </header>
+    <section class="rocket container" id="rocket">
+        <div class="left-block">
+            <div class="block">
+                <h1>Delve</h1>
+                <p>Welcome to Float – your window to the cosmos. Immerse yourself in the universe's wonders through breathtaking imagery and fascinating data.
+
+                    At Float, I am thrilled to bring you the marvels of space by leveraging NASA's incredible resources. My focus? The mesmerizing "Picture of the Day." Each day, i'll present a new image sourced from NASA's treasure trove, offering you a glimpse of the cosmos in all its splendor.
+                    
+                    Join me in exploring the universe, one picture at a time. Prepare to be inspired, intrigued, and captivated by the cosmos like never before.</p>
+
+            </div>
+
+        </div>
+        <div class="rocket-body">
+           
+        </div>
+        <div class="right-block">
+            <div class="block">
+                <h1>Why Float</h1>
+                <p>Unlocking the Universe: Float is your gateway to NASA's astounding world of space exploration. Through NASA's API, I harness the power of data to bring you captivating visuals that unveil the cosmos' mysteries.
+
+                    My approach? Data visualization. I believe in making complex information accessible and engaging. Every piece of data is transformed into compelling visuals that reveal the intricate tapestry of our universe.
+                    
+                    Why the "Picture of the Day"? It's a daily slice of awe, encapsulating the beauty and science of space in a single frame. Each image tells a story of cosmic phenomena, celestial landscapes, and scientific breakthroughs. With "Picture of the Day," I merge art and science, offering you a daily dose of inspiration and a window into the vast unknown.</p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="blog" id="blogs">
+        
+        <p>BLOG<BR>The critique examines Qi Li's 2020 chapter on data visualization in "Embodying Data." It encompasses definitions, concepts, and sub-fields like information and scientific visualization. The chapter traces data visualization's evolution from written to digital formats, highlighting its impressive growth. The interpretations of data visualization's definition by scholars Card, Mackinlay, Schneiderman, and others converge on the use of technology to present raw data in an understandable format. This emphasizes the importance of visual representation in conveying complex information.
+
+            Modern data visualization has transcended representation to encompass exploration, visualization, and analysis. The use of tools like D3, a JavaScript library, exemplifies this transformation. By employing D3's dynamic race bar chart as an example, the critique underscores the interactivity, scalability, and user engagement that contemporary visualization offers. The chart's real-time interaction, animation control, and adaptability to different datasets demonstrate the potential of modern data visualization tools to make data more accessible and meaningful.
+            
+            Data visualization's historical context is explored, highlighting its role in education through maps, charts, and other forms. The chapter reveals that data visualization has emerged as a crucial research component in diverse fields, from algorithms to computer vision. It emphasizes the utility of visualization as a means to comprehend complex concepts and patterns.
+            
+            Information and scientific visualization are differentiated in terms of purpose and design. Information visualization, seen in graphs and timetables, focuses on effective communication by presenting objective data. In contrast, scientific visualization involves investigating data through simulations, waveforms, and volumes, often employing 3D modeling due to the multidimensional nature of scientific data.</p>
+    
+    
+    </section>
+    
+    <section class="designs" id="designs">
+        
+        <img src="Media/picture of the day wireframe.png">
+
+    </section>
+
+    <section class="visuals" id="visuals">
+        <h1>CONTENT COMING SOON</h1>
+      
+
+        
+    </section>
+    
+    
+   
+    
+   
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.5 + 'px';
+            text.style.top = value * 1 + 'px';
+
+        })
+
+    </script>
+
+    <script src="index.js"></script>
+
+    
+</body>
+</html>
